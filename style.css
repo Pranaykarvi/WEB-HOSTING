@@ -1,1 +1,155 @@
+body {
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
+.main-header {
+    background-color: lightskyblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.main-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.main-nav {
+    background-color: darkgrey;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    padding: 10;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin: 0.15px
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.main-nav ul li a:hover {
+    color: black;
+}
+
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.about-me-header {
+    background-color: lightskyblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-me-header h3 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+.about-text {
+    width: 60%; /* Text takes up 60% of the space */
+}
+
+.about-photo {
+    width: 450px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.Projects-header{
+    background-color: lightskyblue;
+    padding: 20px;
+    text-align: center;
+    
+}
+.Projects-header h3{
+    margin: 0%;
+    font-size: 2.5em;
+}
+
+.Projects {
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+.Project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Project-photo {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    background-color: lightgray; /* Placeholder color for empty images */
+}
+
+.Project-info {
+    padding: 15px;
+}
+
+.Project-info p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.Project-info p strong {
+    font-size: 1.2em;
+    color: #000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .Project-info p {
+        font-size: 0.9em;
+    }
+}
